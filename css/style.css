@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    /* Al poner 100% en el ancho el contenedor se adaptara*/
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-header.png);
+    background-size: cover; /*sirve para adaptar el fondo y que no se repita*/
+    padding-top: 40px;
+}
+
+nav{
+    width: 1200px;
+    margin: 0 auto; /*Centrar el nav*/
+    display: flex; /*sirve para colocar a la derecha la barra de navegacion(todos los contenedores secolocan a la derecha*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0 15px;
+    list-style: none;/*Para quitar los punto de la lista*/
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover{
+    border: 2px solid #fff;
+}
+
+#hero{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#hero h1{
+    color: #e8f00c;
+    font-size: 50px;
+    margin: 0;
+}
+
+#hero h2{
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+#hero .btn{
+    background:#e8f00c;
+    padding: 12px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: .4s;
+    color: grey;
+}
+
+#hero .btn:hover{
+    padding: 14px 35px;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+main #planes{
+    width: 100%;
+    background: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+main #planes .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main #planes .container h2{
+    font-size: 46px;
+}
+
+main #planes .container p{
+    font-size: 20px;
+}
+
+main #planes .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+main #planes .container .row .col-4{
+    width: 259px;
+    position: relative;
+}
+
+
+main #planes .container .row .col-4 h3{
+    position: absolute;
+    top: 115px;
+    margin: 0;
+    left:0;
+    right:0;
+    color: #e8f00c; 
+    text-transform:uppercase;
+    font-size: 26px;
+}
+
+/* Seccion destinos */
+
+#destinos{
+    width: 100%;
+    background: url(../img/bg-destinos.png);
+    background-size: cover;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+#destinos .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#destinos .container h2{
+    color: #e8f00c;
+    font-size: 50px;
+}
+
+#destinos .container .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+#destinos .container .row .col-6 h3{
+    color: #fff;
+    font-size: 20PX;
+}
+
+/* seccion conatc */
+
+#contacto{
+    background: #e8f00c;
+    text-align: center;
+    padding: 120px 0;
+}
+
+#contacto .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#contacto .container h2{
+    font-size: 50px;
+}
+
+#contacto .container p{
+    font-size: 26px;
+}
+
+#contacto .container .row{
+    display: flex;
+    justify-content: center;
+}
+
+#contacto .container .row input{
+    padding: 10px 20px;
+    font-size: 26px;
+    margin: 15px 10px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+#contacto .container .row select{
+    padding: 10px 20px;
+    font-size: 26px;
+    margin: 15px 10px;
+    width: 380px;
+    border-radius: 20px;
+}
+
+#contacto .container button{
+    padding: 10px 50px;
+    font-size: 25px;
+    margin: 40px 0;
+    background: #8a8f0c;
+    color: #fff;
+    border: none;
+}
+
+footer{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 40px 70px;
+}
